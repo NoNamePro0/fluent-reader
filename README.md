@@ -52,20 +52,19 @@ If you enjoy using this app, consider supporting its development by donating thr
 
 ### Build from source
 ```bash
+# Clone this Repository
+git clone https://github.com/NoNamePro0/fluent-reader/ && cd fluent-reader
+
 # Install dependencies
 npm install
 
-# Compile ts & dependencies
-npm run build
+# Start App
+npm run start
 
-# Start the application
-npm run electron
-
-# Generate certificate for signature
+# Package app for windows
+npm build
 electron-builder create-self-signed-cert
-# Package the app for Windows
 npm run package-win
-
 ```
 
 ### Developed with
